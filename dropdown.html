@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+	
+	<title>DROPDOWN </title>
+</head>
+<style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	body{
+		background-image: url(bg.png);
+		background-size: cover;
+		background-position: center;
+		box-sizing: border-box;
+		font-family: sans-serif;
+	}
+	.menu-bar{
+		background-color: green;
+		text-align: center;
+	}
+
+.menu-bar ul{
+
+		display: inline-flex;
+		list-style: none;
+		color: white;
+	}
+	.menu-bar ul li{
+
+
+		width: 120px;
+		margin: 15px;
+		padding: 15px;
+	}
+	.menu-bar ul li a{
+		text-decoration: none;
+		color: white;
+	}
+	.active, .menu-bar ul li:hover
+	{
+		background-color: #2bab0d;
+		border-radius: 3px;
+	}
+.menu-bar .fa{
+	margin-right: 8px;
+}
+.sub-menu1{
+	display: none;
+}
+
+menu-bar ul li:hover .sub-menu1 ul 
+{
+	display: block;
+	margin: 10px;
+	
+
+}
+.menu-bar ul li:hover .sub-menu1 ul li{
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted white;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+
+}
+.menu-bar ul li:hover .sub-menu1 ul li:last-child{
+	border-bottom: none;
+}
+
+
+</style>
+<body>
+	<div class="menu-bar">
+		
+	
+	
+		
+			<ul>
+				<li class="active">
+
+					<a href="#"><i class="fa fa-home" ></i>Home</a>
+					
+				</li>
+				<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>About</a>
+				<div class="sub-menu1">
+					<ul>
+						<li><a href="">Mission</a></li>
+						<li><a href="#">Vision</a></li>
+						<li><a href="#">Team</a></li>
+					</ul>
+				</div>
+			</li>
+
+				<li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Services</a></li>
+				<li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>
+Clients</a></li>
+				<li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>
+Investers</a></li>
+				<li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>
+Pricing</a></li>
+				<li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>
+Training</a></li>
+				<li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>
+Contact</a></li>
+			</ul>
+
+		
+
+	
+</div>
+
+</body>
+</html>
