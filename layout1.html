@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LAYOUT1</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+			font-family: arial;
+		}
+		#wrapper{
+			width: 80%;
+			background-color: orange;
+			margin: auto;
+
+		}
+		#logo-div{
+			background-color: lightgray;
+			min-height: 50px;
+			width: 100%;
+			text-align: center;
+			font-size: 20px;
+			padding-left: 2%;
+			line-height: 50px;
+			margin-bottom: 10px;
+		}
+		#nav-div{
+			width: 100%;
+			min-height:30px;
+			background-color: lightblue;
+			text-align:center ;
+			line-height: 30px;
+			font-size: 20px;
+			margin-bottom: 10px;
+
+		}
+		#header-banner{
+			background-color: lavender;
+			width: 100%;
+			min-height: 100px;
+			text-align: center;
+			font-size: 20px;
+			line-height: 100px;
+			margin-bottom: 10px;
+
+
+		}
+		#main-div{
+			
+			width: 100%;
+			
+			margin-bottom:10px ;
+
+
+		}
+		#side-bar{
+			width: 20%;
+			min-height: 400px;
+			background-color: lightgray;
+			float: left;
+			text-align: center;
+			line-height:400px;
+			font-size: 20px;
+
+		}
+		#body-area{
+			width: 75%;
+			min-height: 400px;
+			background-color: pink;
+			float: right;
+			text-align: center;
+			line-height:400px;
+			font-size: 20px;
+		}
+		
+		.clearfix::after{
+			content: "";
+			display: block;
+			clear: both;
+
+		}
+		#footer
+		{
+			background-color: black;
+			width: 100%;
+			min-height: 50px;
+			text-align: center;
+			line-height: 50px;
+
+		}
+		
+
+
+			</style>
+		
+</head>
+
+<body>
+	<div id="wrapper">
+	<div id="logo-div">LOGO
+
+		
+	</div>
+	<div id="nav-div">NAVIGATION
+	</div>
+	<div id="header-banner">HEADER</div>
+	<div id="main-div" class="clearfix">
+		<div id="side-bar">SIDE BAR
+			
+		</div>
+			<div id="body-area">BODY AREA
+				
+			</div>
+	</div>
+	  <div id="footer">Footer
+	</div>
+</div>
+
+
+</body>
+</html>
